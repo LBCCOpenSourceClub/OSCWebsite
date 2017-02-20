@@ -1,0 +1,98 @@
+body{
+	background-color: #263238;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 12pt;
+}
+ul{
+	list-style-type: none;
+}
+p{
+	font-size: 10pt;
+}
+a:link {
+    text-decoration: none;
+    color: #90A4AE;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #607D8B;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+/*class css*/
+.content{
+	margin-right: 310px;
+}
+.sidebar{
+	padding: 5px;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #B0BEC5;
+	background-color: #37474F;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0px;
+	width: 300px;
+}
+/* id css*/
+#infotag{
+	margin-bottom: 10px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #B0BEC5;
+
+}
+#meettag{
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#meettimetag{
+	margin-top: 5px;
+}
+#projects{
+	padding: 0px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #B0BEC5;
+}
+#bottom_elm{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #B0BEC5;
+}
+/*defaults for mobile elms that change in resize*/
+#show_menu_check {
+	display: none;
+}
+#show_menu {
+	display: none;
+}
+/*mobile css*/
+@media screen and (max-width: 740px){
+	#show_menu {
+		display: block;
+		align-content: right;
+		font-size: 20px;
+	}
+	.sidebar{
+			display: none;
+		}
+	#show_menu_check:checked ~ .sidebar{
+			display: block;
+		}
+	}
+	#show_menu_check:not(:checked) ~ .content{
+			margin-right: 0px;
+		}
+	}
+
+}
