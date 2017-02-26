@@ -86,13 +86,13 @@ a:active {
 	.sidebar{
 			display: none;
 		}
+	.content{
+		margin-right: 0px
+	}
 	#show_menu_check:checked ~ .sidebar{
 			display: block;
 		}
 	}
-	#show_menu_check:not(:checked) ~ .content{
-			margin-right: 0px;
-		}
-	}
+
 
 }
