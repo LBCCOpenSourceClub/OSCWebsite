@@ -43,6 +43,24 @@ a:active {
 	right: 0px;
 	width: 300px;
 }
+.post{
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #B0BEC5;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #B0BEC5;
+	margin: 15px;
+	padding: 15px;
+	padding-left: 0px
+}
+.post_title{
+	margin-top: 0px;
+}
+.post_date{
+	text-align: right;
+	display: block;
+}
 /* id css*/
 #infotag{
 	margin-bottom: 10px;
