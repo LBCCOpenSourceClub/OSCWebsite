@@ -2,6 +2,7 @@ body{
 	background-color: #263238;
 	font-family: 'Source Code Pro', monospace;
 	font-size: 12pt;
+	color: #D2D7D9;
 }
 ul{
 	list-style-type: none;
@@ -41,6 +42,24 @@ a:active {
 	bottom: 0;
 	right: 0px;
 	width: 300px;
+}
+.post{
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #B0BEC5;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #B0BEC5;
+	margin: 15px;
+	padding: 15px;
+	padding-left: 0px
+}
+.post_title{
+	margin-top: 0px;
+}
+.post_date{
+	text-align: right;
+	display: block;
 }
 /* id css*/
 #infotag{
@@ -86,13 +105,13 @@ a:active {
 	.sidebar{
 			display: none;
 		}
+	.content{
+		margin-right: 0px
+	}
 	#show_menu_check:checked ~ .sidebar{
 			display: block;
 		}
 	}
-	#show_menu_check:not(:checked) ~ .content{
-			margin-right: 0px;
-		}
-	}
+
 
 }
